@@ -24,6 +24,7 @@ jobs:
           name: Installing Dependencies
           command: | 
             cd ios/SalesforceReactTests
+            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
             ./prepareios.js 
       - save_cache:
           key: *pods-cache-key
