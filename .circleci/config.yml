@@ -7,7 +7,6 @@ defaults: &defaults
   macos:
     xcode: "10.2.1"
   environment:
-    BASH_ENV: ~/.bashrc
     FASTLANE_SKIP_UPDATE_CHECK: true
     CHRUBY_VER: 2.5.5
 
